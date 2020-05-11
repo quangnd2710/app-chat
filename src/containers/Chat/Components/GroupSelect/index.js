@@ -3,6 +3,8 @@ import Input from 'components/Input';
 import DatePicker from 'react-datepicker';
 import { Row, Col } from 'reactstrap';
 import "react-datepicker/dist/react-datepicker.css";
+import './style.scss';
+
 const GroupSelect = ({ name, value, onChange, selectDate }) => {
 
   return (
@@ -11,10 +13,10 @@ const GroupSelect = ({ name, value, onChange, selectDate }) => {
         <p>Publish date</p>
       </Col>
       <Col xs="9">
-        <Input type="radio" id="exampleCustomRadio" name={name} value={"now"} onChange={onChange} label="Publish now" />
+        <Input type="radio" id="customRadio" name={name} value={"now"} onChange={onChange} label="Publish now" />
         <Row>
-          <Col xs="12">
-            <Input type="radio" id="exampleCustomRadio2" name={name} value={"schedule"} onChange={onChange} inline/>
+          <Col xs="12" className="select-date">
+            <Input type="radio" id="customRadio2" name={name} value={"schedule"} onChange={onChange} inline/>
             <DatePicker
               dateFormat="MM/DD/YYYY"
               onChange={date => selectDate(date)}

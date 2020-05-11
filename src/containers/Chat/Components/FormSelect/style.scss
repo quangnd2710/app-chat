@@ -1,0 +1,29 @@
+.header-form {
+  width: 100%;
+  min-height: 55px;
+
+  border: 1px solid lightgray;
+  background-color: aliceblue;
+  padding-left: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.form-body {
+  height: 200px;
+  padding: 20px !important;
+  border: 1px solid lightgray;
+  .chat-body {
+    height: 150px;
+
+    padding-top: 15px;
+    border: 1px solid lightgray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}

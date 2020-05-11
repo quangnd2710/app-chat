@@ -1,12 +1,13 @@
 import React from 'react';
 import GroupButton from './Components/GroupButton';
 import GroupSelect from './Components/GroupSelect';
+import FormSelect from './Components/FormSelect';
 
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 
 const ChatV = ({ }) => {
   return (
-    <>
+    <Container>
       <Row>
         <Col>
           <GroupButton title="test" />
@@ -19,7 +20,11 @@ const ChatV = ({ }) => {
           onChange={() => {}}
         />
       </Row>
-    </>
+      <Row>
+        <FormSelect
+        />
+      </Row>
+    </Container>
   );
 };
 

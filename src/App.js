@@ -13,9 +13,7 @@ function App() {
         </Container>
       </div>
       <div className="body">
-        <Container>
-          <ChatVM />
-        </Container>
+        <ChatVM />
       </div>
       <footer className="footer">
       </footer>
