@@ -1,12 +1,25 @@
 import React from 'react';
-import Button from 'components/Button';
+import GroupButton from './Components/GroupButton';
+import GroupSelect from './Components/GroupSelect';
+
+import { Row, Col } from 'reactstrap';
 
 const ChatV = ({ }) => {
   return (
-    <Button
-      color="success"
-      text="test"
-    />
+    <>
+      <Row>
+        <Col>
+          <GroupButton title="test" />
+        </Col>
+      </Row>
+      <Row>
+        <GroupSelect
+          name="name"
+          value={"test"}
+          onChange={() => {}}
+        />
+      </Row>
+    </>
   );
 };
 

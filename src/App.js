@@ -1,11 +1,24 @@
 import React from 'react';
 import { ChatVM } from './containers';
-import './App.css';
+import { Container } from 'reactstrap';
+import './App.scss';
+import Section from 'components/Section';
 
 function App() {
   return (
     <div className="App">
-      <ChatVM />
+      <div className="headers">
+        <Container>
+          <Section title="Timeline post" />
+        </Container>
+      </div>
+      <div className="body">
+        <Container>
+          <ChatVM />
+        </Container>
+      </div>
+      <footer className="footer">
+      </footer>
     </div>
   );
 }

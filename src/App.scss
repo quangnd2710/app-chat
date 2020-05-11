@@ -1,0 +1,20 @@
+.footer {
+  min-height: 150px;
+}
+
+html, body, #root, .App {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  flex: auto;
+  padding: 30px;
+}
