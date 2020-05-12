@@ -10,12 +10,12 @@ const Headers = ({ title, components }) => (
   </div>
 );
 
-Headers.proptype = { 
+Headers.proptype = {
   title: PropTypes.string,
   components: PropTypes.object,
 };
 
-Headers.defaultProps = { 
+Headers.defaultProps = {
   title: '',
   components: {},
 }

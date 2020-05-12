@@ -5,19 +5,19 @@ import FormSelect from './Components/FormSelect';
 
 import { Row, Col, Container } from 'reactstrap';
 
-const ChatV = ({ }) => {
+const ChatV = ({ dataForm, onSelectRadio, onSelectDate }) => {
   return (
     <Container>
       <Row>
         <Col>
-          <GroupButton title="test" />
+          <GroupButton title="test" isSchedule={dataForm.typePublish === 'schedule'} />
         </Col>
       </Row>
       <Row>
         <GroupSelect
-          name="name"
-          value={"test"}
-          onChange={() => {}}
+          value={dataForm.typePublish}
+          onChange={onSelectRadio}
+          onSelectDate={onSelectDate}
         />
       </Row>
       <Row>
